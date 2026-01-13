@@ -37,6 +37,8 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
+  color: #424242;
+  font-weight: 500;
 }
 header nav h1 {
   font-size: 45px;
@@ -61,8 +63,35 @@ header nav h1 {
 .benar .benartxt p {
   font-size: 16px;
 }
+.benar .img {
+  padding-bottom: 45px;
+}
 .benar .img img {
   width: 100%;
+}
+
+/* features css start */
+main {
+  width: 71%;
+  margin: auto;
+  margin-top: 85px;
+}
+.features {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.features .feturesimg {
+  flex: 1;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.features .feturesimg img {
+  width: 100%;
+}
+.features .featurestext {
+  flex: 1;
 }
 
 @media screen and (max-width: 576px) {
@@ -80,5 +109,33 @@ header nav h1 {
   .benar .benartxt h1 {
     font-size: 40px;
     font-weight: 700;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features .feturesimg {
+    flex-basis: 1;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+  }
+  .features .feturesimg {
+    flex-basis: 1;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features {
+    flex-direction: column;
   }
 }
