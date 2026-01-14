@@ -1,5 +1,6 @@
 body {
   font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
 }
 /* comon CSS */
 .colortwo {
@@ -80,6 +81,7 @@ main {
   display: flex;
   gap: 50px;
   align-items: center;
+  margin-bottom: 100px;
 }
 .features .feturesimg {
   flex: 1;
@@ -92,6 +94,142 @@ main {
 }
 .features .featurestext {
   flex: 1;
+}
+.features .featurestext h2 {
+  font-size: 3rem;
+  color: #727272;
+  font-weight: 500;
+}
+.features .featurestext h2 .our {
+  color: black;
+  font-weight: 900;
+}
+.features .featurestext h2 .Features {
+  color: #ff900e;
+  font-weight: 900;
+}
+
+/* injoy feauture start css */
+
+.injoy-features {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.injoy-features .injoytxt {
+  flex: 1;
+}
+.injoy-features .injoyimg {
+  flex: 1;
+}
+.injoy-features .injoytxt .title h2 {
+  border-left: 5px solid #ff900e;
+  padding-left: 25px;
+  margin-bottom: 24px;
+}
+.injoy-features .container .card {
+  box-shadow: 0px 0px 2px 0px black;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.injoy-features .container .card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 2px;
+}
+.injoy-features .injoyimg img {
+  width: 100%;
+}
+.button {
+  padding: 25px 40px;
+  color: white;
+  margin-left: -50px;
+  margin-top: -120px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+}
+.button h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 5px;
+}
+.button p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 5px;
+}
+
+/* same facts start css */
+.some-facts {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+.some-facts .facts h3 {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 3px;
+}
+.some-facts .container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+}
+.some-facts .container .card {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 3px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  padding: 30px;
+}
+.some-facts .container .card h1 {
+  margin: 0px;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.some-facts .container .card p {
+  margin: 0px;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.sponspors .sponsporstitle {
+  text-align: center;
+}
+.sponspors .sponsporstitle h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.sponspors .container {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 40px 0px;
+}
+.sponspors .container img {
+  width: 100%;
+  filter: grayscale(100);
+}
+
+/* footer css start */
+footer {
+  height: 100px;
+
+  width: 71%;
+  margin: auto;
+  background: #fff4e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px auto;
+  padding: 0px 10px;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 576px) {
@@ -119,6 +257,34 @@ main {
     gap: 24px;
     grid-template-columns: repeat(1, 1fr);
   }
+  .benar .img {
+    padding-bottom: 5px;
+  }
+  .features .featurestext {
+    text-align: center;
+  }
+  .injoy-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .button {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .some-facts .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .some-facts {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .sponspors .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    margin: 40px auto;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -137,5 +303,33 @@ main {
   }
   .features {
     flex-direction: column;
+  }
+  .benar .img {
+    padding-bottom: 5px;
+  }
+  .features .featurestext {
+    text-align: center;
+  }
+  .injoy-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .button {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .some-facts .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .some-facts {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .sponspors .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    margin: 60px auto;
   }
 }
